@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sofų Medžioklė</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:#0f1117;
+    color:white;
+    font-family:Arial, sans-serif;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:#4ade80;
+}
+
+h2{
+    margin-top:30px;
+    margin-bottom:15px;
+    color:#60a5fa;
+}
+
+.card{
+    background:#1a1d24;
+    padding:18px;
+    border-radius:15px;
+    margin-bottom:15px;
+    border:1px solid #2d3440;
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#ffffff;
+}
+
+.info{
+    color:#cbd5e1;
+    margin-top:5px;
+    line-height:1.5;
+}
+
+.rating{
+    color:#facc15;
+    font-weight:bold;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:12px;
+    background:#22c55e;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#16a34a;
+}
+
+.note{
+    background:#1f2937;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:20px;
+    border-left:5px solid #4ade80;
+}
+
+.bahuras-zone{
+    margin-top:40px;
+    text-align:center;
+    background:#1a1d24;
+    padding:25px;
+    border-radius:18px;
+}
+
+.bahuras-btn{
+    margin-top:15px;
+    padding:18px 40px;
+    font-size:26px;
+    font-weight:bold;
+    border:none;
+    border-radius:15px;
+    background:#ef4444;
+    color:white;
+    cursor:pointer;
+}
+
+.bahuras-btn:hover{
+    background:#dc2626;
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.95);
+    z-index:999;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.modal img{
+    max-width:90%;
+    max-height:80vh;
+    border-radius:15px;
+}
+
+.close-btn{
+    margin-top:20px;
+    background:#ef4444;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:12px 22px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.footer{
+    text-align:center;
+    margin-top:40px;
+    color:#94a3b8;
+}
+</style>
+
+</head>
+<body>
+
+<h1>🛋️ SOFŲ PAIEŠKOS PLANAS</h1>
+
+<div class="note">
+<b>Rekomendacija:</b><br>
+Jeigu važiuojama iš Klaipėdos, pirmiausia aplankyti Baldų Rojų ir Mano Sofą Vilniuje.
+Didžiausia tikimybė rasti tinkamą variantą vienos dienos metu.
+</div>
+
+<h2>🏆 VILNIUS</h2>
+
+<div class="card">
+<h3>1. Baldų Rojus</h3>
+<div class="info">
+📍 Kalvarijų g. 125<br>
+✅ Didžiausias pasirinkimas<br>
+✅ Sofaforma + daug kitų salonų<br>
+💰 Sofos: 700-2500 €<br>
+💰 Kampai: 1200-3500 €<br>
+⭐ Kainos / kokybės santykis: 5/5<br>
+📊 Ekspozicija: Labai didelė
+</div>
+
+<a class="btn"
+href="https://waze.com/ul?q=Kalvariju%20g.%20125%20Vilnius">
+🚗 Atidaryti Waze
+</a>
+</div>
+
+<div class="card">
+<h3>2. Mano Sofa</h3>
+<div class="info">
+📍 Žirmūnų g. 70<br>
+✅ Specializuojasi sofose<br>
+✅ Geras kainos ir kokybės santykis<br>
+💰 Sofos: 1000-2500 €<br>
+💰 Kampai: 1500-3500 €<br>
+⭐ Kainos / kokybės santykis: 5/5<br>
+📊 Ekspozicija: Didelė
+</div>
+
+<a class="btn"
+href="https://waze.com/ul?q=Zirmunu%20g.%2070%20Vilnius">
+🚗 Atidaryti Waze
+</a>
+</div>
+
+<div class="card">
+<h3>3. Lova Plius</h3>
+<div class="info">
+📍 Jeronimo Ralio g. 6<br>
+💰 Sofos: 900-2500 €<br>
+⭐ Kainos / kokybės santykis: 4/5<br>
+📊 Ekspozicija: Vidutinė
+</div>
+
+<a class="btn"
+href="https://waze.com/ul?q=Jeronimo%20Ralio%20g.%206%20Vilnius">
+🚗 Atidaryti Waze
+</a>
+</div>
+
+<h2>🏆 KAUNAS</h2>
+
+<div class="card">
+<h3>1. Nemuno Baldai</h3>
+<div class="info">
+📍 Taikos pr. 125B<br>
+✅ Daug salonų vienoje vietoje<br>
+✅ Sofaforma ir kiti salonai<br>
+💰 Sofos: 700-2500 €<br>
+💰 Kampai: 1200-3500 €<br>
+⭐ Kainos / kokybės santykis: 5/5<br>
+📊 Ekspozicija: Labai didelė
+</div>
+
+<a class="btn"
+href="https://waze.com/ul?q=Taikos%20pr.%20125B%20Kaunas">
+🚗 Atidaryti Waze
+</a>
+</div>
+
+<div class="card">
+<h3>2. Mano Sofa</h3>
+<div class="info">
+📍 Drobės g. 62<br>
+💰 Sofos: 1000-2500 €<br>
+💰 Kampai: 1500-3500 €<br>
+⭐ Kainos / kokybės santykis: 5/5<br>
+📊 Ekspozicija: Didelė
+</div>
+
+<a class="btn"
+href="https://waze.com/ul?q=Drobes%20g.%2062%20Kaunas">
+🚗 Atidaryti Waze
+</a>
+</div>
+
+<div class="card">
+<h3>3. DomusArt</h3>
+<div class="info">
+📍 Savanorių pr. 288, Kaunas<br>
+💰 Sofos: 1200-3500 €<br>
+💰 Kampai: 1800-5000 €<br>
+⭐ Kainos / kokybės santykis: 4/5<br>
+📊 Ekspozicija: Didelė
+</div>
+
+<a class="btn"
+href="https://waze.com/ul?q=Savanoriu%20pr.%20288%20Kaunas">
+🚗 Atidaryti Waze
+</a>
+</div>
+
+<div class="bahuras-zone">
+<h2>🔥 BAHŪRO ZONA 🔥</h2>
+
+<p>
+Jeigu nori pamatyti kietą bahūrą paspausk mygtuką BAHURAS
+</p>
+
+<button class="bahuras-btn" onclick="openBahuras()">
+BAHURAS
+</button>
+</div>
+
+<div id="bahurasModal" class="modal">
+<img src="BAHURAS.jpg" alt="Bahūras">
+<button class="close-btn" onclick="closeBahuras()">
+Uždaryti
+</button>
+</div>
+
+<div class="footer">
+Sofų medžioklės planas v1.0 😎
+</div>
+
+<script>
+function openBahuras(){
+    document.getElementById("bahurasModal").style.display="flex";
+}
+
+function closeBahuras(){
+    document.getElementById("bahurasModal").style.display="none";
+}
+</script>
+
+</body>
+</html>
